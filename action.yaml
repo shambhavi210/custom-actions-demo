@@ -1,8 +1,14 @@
-name: custom-actions
-on: 
-  push
-jobs:
-  runs-on: ubuntu-latest
-  steps:
-    uses:actions/checkout@v3
-    run: npm install
+name: Print message
+Descriptopn: Print message to console
+inputs:
+  message:
+    Description:  message to print
+    required: true
+outputs:
+  none:
+  descroption: no output produced by this action
+
+runs:
+  using: "node16"
+  main: "index.js"
+    
