@@ -6,7 +6,7 @@ inputs:
     required: true
 outputs:
   none:
-  descroption: no output produced by this action
+    description: no output produced by this action
 
 runs:
   using: "node16"
